@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/c8030cb4d4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <img src="images/logos.png" alt="" height="48" />
+        </div>
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#technology">PROJECTS</a></li>
+          <li><a href="#contact">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="main">
+        <h1 class="headings">HI I'M<br />JOVELYN ESTADOLA</h1>
+        <!-- <p>
+          I'm
+          <span
+            class="typed"
+            data-typed-items="Web Developer, Freelancer"
+          ></span>
+        </p> -->
+
+        <button
+          class="btn btn-primary btn-lg"
+          data-bs-toggle="modal"
+          data-bs-target="#start"
+        >
+          HIRE ME
+        </button>
+      </div>
+    </section>
+    <div
+      class="modal fade"
+      id="start"
+      tabindex="-1"
+      aria-labelledby="startLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="startLabel">Messsage Me</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Please fill-out the form below</p>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="text" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="col-form-label">Message</label>
+                <input type="text" class="form-control" id="message" required />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="'btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              class="'btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="about-container">
+        <!-- <h1 class="headings">
+        <div id="intro"> -->
+        <img src="images/image.png" />
+        <div class="about-text">
+          <p>About me</p>
+          <p>
+            Hi I'm Jovelyn Estadola, 21 years old and i'm living in Sorsogon
+            City, Philippines. Currently, I am taking Bachelor of Science in
+            Information Technology at Sorsogon State University.I have enough
+            skill and motivation that helps me pursue front end developer. I'm
+            also very passionate about this field and i always strive forward to
+            enhance my skills in developing web application.
+          </p>
+          <a
+            class="btn line-btn-dark btn-icon btn-radius"
+            href="file/resume.pdf"
+            target="_blank"
+            title=""
+            download
+            >DOWNLOAD<br />
+            MY CV</a
+          >
+        </div>
+      </div>
+      <!-- <div class="text-center m-top-50">
+        <a
+          class="btn line-btn-dark btn-icon btn-radius"
+          href="1.pdf"
+          title=""
+          download
+        ></a>
+      </div> -->
+    </section>
+    <section id="technology">
+      <div class="technology-text">
+        <p>My current skills</p>
+      </div>
+      <div class="box-container">
+        <div class="box-1">
+          <span>1</span>
+          <p class="heading">html</p>
+          <p class="details">
+          i have enough knowledge in html . . 
+          </p>
+          <button>Read more</button>
+        </div>
+
+        <div class="box-2">
+          <span>2</span>
+          <p class="heading">css</p>
+          <p class="details">
+          i enjoy studying css and currently in the middle of getting to know bootstrap
+          </p>
+          <button>Read more</button>
+        </div>
+
+        <div class="box-3">
+          <span>3</span>
+          <p class="heading">javascript</p>
+          <p class="details">
+         a little bit hard for me and i know one day i will be good on it
+          </p>
+          <button>Read more</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects-container">
+      <div class="projects">
+        <p>Creative works for the last months </p>
+        <a href="https://github.com/jovelyn25" target="_blank" ><i class="fa fa-github">Visit github</i></a>
+        <div class="row">
+          <div class="image">
+            <div id="zoom-In">
+              <figure>
+                <img src="images/pic1 (1).png" alt="" />
+                <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
+              </figure>
+            </div>
+          </div>
+          <div class="image">
+            <div id="zoom-In">
+              <figure>
+                <img src="images/pic1 (2).png" alt="" />
+                <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
+              </figure>
+            </div>
+          </div>
+          <div class="image">
+            <div id="zoom-In">
+              <figure>
+                <img src="images/pic1 (3).png" alt="" />
+                <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
+              </figure>
+            </div>
+          </div>
+          <div class="image">
+            <div id="zoom-In">
+              <figure>
+                <img src="images/pic1 (4).png" alt="" />
+                <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Don't hesitate, let's talk about your idea and make it happen.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Ticol Sorsogon</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>jovelynestadola@sorsu.edu.ph</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>09105682046</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                frameborder="0"
+                style="border: 0; width: 100%; height: 290px"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">What's your name?</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Finally tell me your idea</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <footer>
+      <p>Social Links</p>
+      <p>Never stop learning, never give up your dreams.</p>
+      <div class="social-icons">
+        <a href="/jovelyn.estadola.9" ><i class="fa fa-facebook"></i></a>
+        <a href="@jovel_ofakindd"><i class="fa fa-twitter"></i></a>
+        <a href="@jovstdla"><i class="fa fa-instagram"></i></a>
+        <a href="#" ><i class="fa fa-dribbble"></i></a>
+      </div>
+
+      <p class="copyright">
+        <span>Designed </span> and <span> Developed</span> by Jovelyn Estadola
+        2021
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
