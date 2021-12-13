@@ -9,6 +9,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -44,70 +45,96 @@
       <div class="main">
         <h1 class="headings">HI I'M<br />JOVELYN ESTADOLA</h1>
         
-        <p>
+        <p style="margin: 5px">
            Front-end Developer
          
         </p>
 
-        <button
-          class="modal-btn"
-         
-        >
+        <button type="button" class="modal-btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           HIRE ME
         </button>
-      </div>
-    </section>
-    <!-- <div
-      class="modal fade"
-      id="start"
-      tabindex="-1"
-      aria-labelledby="startLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="startLabel">Messsage Me</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Please fill-out the form below</p>
-            <form>
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email</label>
-                <input type="text" class="form-control" id="email" required />
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Please fill-out the form below</h5>
+                <button type="button" class="btn-close" style="height: auto; width: auto;" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="mb-3">
-                <label for="message" class="col-form-label">Message</label>
-                <input type="text" class="form-control" id="message" required />
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="col-form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="col-form-label">Message</label>
+                    <input type="text" class="form-control" id="message" required />
+                  </div>
+                </form>
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="'btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button
-              type="submit"
-              class="'btn btn-primary"
-              data-bs-dismiss="modal"
-            >
-              Submit
-            </button>
+              <div class="modal-footer">
+                <button type="button" class="modal-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="modal-btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          HIRE ME
+        </button>
+
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="startLabel">Messsage Me</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="lead">Please fill-out the form below</p>
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="col-form-label">Email</label>
+                    <input type="text" class="form-control" id="email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="col-form-label">Message</label>
+                    <input type="text" class="form-control" id="message" required />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="'btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="'btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
-    </div> -->
-<div class="modal-bg">
+    </section>
+    
+<!-- <div class="modal-bg">
   <div class="modal">
   <h2>Message me</h2>
   <label for="message">Message</label>
@@ -118,7 +145,7 @@
   <spa class="modal-close"></span>
   </div>
 </div>
-
+ -->
 
 
 
@@ -193,15 +220,15 @@
     <section class="projects">
       <div class="projects-container">
         <div class="projects">
-          <p>Creative works for the last months</p>
-          <a href="https://github.com/jovelyn25" target="_blank"
-            ><i class="fa fa-github">Visit github</i></a
-          >
+          <h3 style="margin: 10px;"> Creative Works For the Last Months</h3>
+         
           <div class="row">
             <div class="image">
               <div id="zoom-In">
                 <figure>
-                  <img src="images/pic1 (1).png" alt="" />
+                   <a href="https://github.com/jovelyn25/CSS-Pricing-Panel" target="_blank" style="height: auto; width: auto;">
+                     <img src="images/pic1 (1).png" alt="" />
+                   </a>
                   <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
                 </figure>
               </div>
@@ -209,9 +236,10 @@
             <div class="image">
               <div id="zoom-In">
                 <figure>
+                  <a href="https://github.com/jovelyn25/Rock-Paper-Scissor" target="_blank" style="height: auto; width: auto;">
                   <img src="images/pic1 (2).png" alt="" />
                   <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
-                
+                  </a>
                 </figure>
 
 
@@ -220,7 +248,9 @@
             <div class="image">
               <div id="zoom-In">
                 <figure>
+                  <a href="https://github.com/jovelyn25/JE-beauty-Shop-Website" target="_blank" style="height: auto; width: auto;">
                   <img src="images/pic1 (3).png" alt="" />
+                </a>
                   <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
                 </figure>
               </div>
@@ -228,19 +258,20 @@
             <div class="image">
               <div id="zoom-In">
                 <figure>
-                  <img src="images/pic1 (4).png" alt="" />
+                  <a href="https://github.com/jovelyn25/Glass-Website-HTML-AND-CSS-" target="_blank" style="height: auto; width: auto;">
+                  <img src="images/pic1 (4).png" alt=""/>
+                  </a>
                   <!-- <img class="transition-image" src="images/pic1 (2).png" alt="" /> -->
                 </figure>
               </div>
             </div>
             <div class="image">
+              <div id="zoom-In">
                 <figure>
+                  <a href="https://github.com/DJmistMAGO/WeatherApp_AdvancedWeb.git" target="_blank" style="height: auto; width: auto;">
                   <img src="images/pic1 (5).png" alt="" />
-                  <img
-                    class="transition-image"
-                    src="images/pic1 (6).png"
-                    alt=""
-                  />
+                  <img class="transition-image" src="images/pic1 (6).png" alt=""/>
+                </a>
                 </figure>
               </div>
             </div>
@@ -352,8 +383,8 @@
     <!-- End Contact Section -->
 
     <footer>
-      <p>Social Links</p>
-      <p>Never stop learning, never give up your dreams.</p>
+      <p style="color: white; padding-top: 5px;">Social Links</p>
+      <p style="color: white;">Never stop learning, never give up your dreams.</p>
       <div class="social-icons">
         <a href="/jovelyn.estadola.9"><i class="fa fa-facebook"></i></a>
         <a href="@jovel_ofakindd"><i class="fa fa-twitter"></i></a>
@@ -383,5 +414,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
